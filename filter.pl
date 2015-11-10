@@ -21,6 +21,7 @@ while(<I>){
         my $head=join "\t",@header;
         &final_filtering($head,\@all_samples,$d_thresh,$d_upperbound,$b_thresh);
 }
+
 sub final_filtering{
         my $head_column=shift;
         my $ref=shift;
